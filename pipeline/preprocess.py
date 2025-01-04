@@ -31,3 +31,9 @@ def aggregate_data_monthly(sales):
     monthly_sales.rename(columns={'items_cnt_day' : 'item_cnt_month'}, inplace=True)
     
     return monthly_sales
+
+def save_cleaned_data(monthly_sales, output_path):
+    """Save cleaned data to new CSV file"""
+
+    monthly_sales.to_csv(output_path, index=False)
+    print(f"cleaned data saved to {output_path}")
