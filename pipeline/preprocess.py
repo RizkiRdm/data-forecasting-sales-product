@@ -19,5 +19,15 @@ def clean_data(sales):
 
     return sales
 
-def aggregate_monthly(sales):
-    """"""
+def aggregate_data_monthly(sales):
+    """Aggregate daily sales data to monthly sales data"""
+
+    sales['date'] = pd.to_datetime(sales['date'], format="%d.%m.%Y")
+    sales['month'] = sales['date'].dt.to_period("M")
+    monthly_sales = sales.groupby(['month', 'shop_id', 'items_id']).agg({
+        'item_cnt_day': 'sum',
+        'item_price': 'mean'
+    }).reset_index()
+    monthly_sales.rename(columns={'items_cnt_day' : 'item_cnt_month'}, inplace=True)
+    
+    return monthly_sales
