@@ -10,23 +10,6 @@ Project ini bertujuan untuk memprediksi penjualan barang berdasarkan data histor
   - scikit-learn: Untuk modeling
   - matplotlib, seaborn: Untuk visualisasi
 
-## 📂 Struktur Project
-```plaintext
-project-forecasting/
-│
-├── data/
-│   ├── historical_data.csv        # Data penjualan historis
-│   ├── forecast_results.csv       # Hasil prediksi data
-│
-├── notebooks/
-│   ├── forecasting_analysis.ipynb # Notebook untuk forecasting
-│   ├── train_data.ipynb # Notebook untuk proses training data & visualisasi
-│
-├── README.md                      # Dokumentasi lengkap project
-│
-└── requirements.txt               # Library dependencies
-```
-
 ## 🚀 Cara Menjalankan Notebook
 Clone repository ini:
 ```bash
@@ -46,8 +29,6 @@ jupyter notebook notebooks/train_data.ipynb
 ```
 
 ## ⚠️ Catatan
-
-Proyek ini untuk keperluan pembelajaran. Silakan kembangkan lebih lanjut sesuai kebutuhan.
 Nasehat Buat Orang yang Perfeksionis:
 
 1. **Inget Tujuan Awal Project:**
