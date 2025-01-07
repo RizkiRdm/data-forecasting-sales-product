@@ -13,7 +13,7 @@ Project ini bertujuan untuk memprediksi penjualan barang berdasarkan data histor
 ## 🚀 Cara Menjalankan Notebook
 Clone repository ini:
 ```bash
-git clone <link_repo>
+git clone https://github.com/RizkiRdm/data-forecasting-sales-product.git
 cd project-forecasting
 ```
 Install dependencies:
@@ -22,10 +22,10 @@ pip install -r requirements.txt
 ```
 Jalankan notebook:
 ```bash
-jupyter notebook notebooks/forecasting_analysis.ipynb
+jupyter notebook notebook/forecasting_analysis.ipynb
 ```
 ```bash
-jupyter notebook notebooks/train_data.ipynb
+jupyter notebook notebook/train_data.ipynb
 ```
 
 ## ⚠️ Catatan
